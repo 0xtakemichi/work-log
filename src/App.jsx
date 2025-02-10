@@ -1,9 +1,12 @@
+import Register from "./components/Authentication/Register"
+import Login from "./components/Authentication/Login"
 
 function App() {
 
   return (
     <>
-      <div>Bit</div>
+      <Register />
+      <Login />
     </>
   )
 }
