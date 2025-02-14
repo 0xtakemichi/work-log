@@ -1,16 +1,14 @@
-import Register from "./pages/auth/Register"
-import Login from "./pages/auth/Login"
-import Navbar from "./components/Navbar/Navbar"
+import { useAuth0 } from '@auth0/auth0-react';
+import AppRouter from "./router/AppRouter"
 
 function App() {
+  const { isLoading } = useAuth0();
 
-  return (
-    <>
-      <Navbar />
-      <Register />
-      <Login />
-    </>
-  )
+  if (isLoading) {
+    return <div>Cargando...</div>;
+  }
+
+  return <AppRouter />;
 }
 
-export default App
+export default App;
