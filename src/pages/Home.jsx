@@ -1,11 +1,11 @@
 import React from 'react';
-import LoginButton from '../components/LoginButton/LoginButton';
+import Navbar from '../components/Navbar/Navbar';
 
 const Home = () => {
   return (
     <div>
+      <Navbar />
       <h1>Bienvenido a IngeBIM</h1>
-      <LoginButton />
     </div>
   );
 };
